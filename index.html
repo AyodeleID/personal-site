@@ -1,65 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayodele Idowu | Home</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayodele Idowu | Economist &amp; Data Scientist</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Ayodele&nbsp;Idowu</div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section class="hero">
-        <div>
-            <h1>Ayodele Idowu</h1>
-            <p>Economist &amp; Data Scientist</p>
+    <!-- Site Header -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-mark">AI</span>
+                <span class="logo-text">Ayodele Idowu</span>
+            </div>
+            <nav class="site-nav">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+            </nav>
         </div>
-    </section>
-    <main class="container">
-        <section class="section">
-            <h2>About</h2>
-            <p>Ayodele is an economist and data scientist with a strong track record in applied econometrics, data analysis and machine‑learning. He is passionate about leveraging data‑driven insights to improve efficiency and inform policy across technology, healthcare and development sectors. Currently pursuing an MSc in Development Economics at the University of Göttingen, he blends academic research with industry experience to solve real‑world problems.</p>
-        </section>
-        <section class="section">
-            <h2>Highlights</h2>
-            <div class="card-grid">
-                <div class="card">
-                    <h3>Research Assistant<br><small>University of Göttingen</small></h3>
-                    <p>Apr&nbsp;2025&nbsp;–&nbsp;present · Göttingen, Germany</p>
-                    <p>Conducts qualitative and quantitative research for the chairs of Agricultural Economics and Information Management, developing data workflows and supporting econometric and machine learning models.</p>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-inner">
+                <div class="hero-text">
+                    <p class="hero-kicker">Economics · Data · Development</p>
+                    <h1>Ayodele Idowu</h1>
+                    <p class="hero-subtitle">Economist &amp; Data Scientist</p>
+                    <p class="hero-body">
+                        I am a Development Economist and data practitioner, currently pursuing an MSc in Development Economics at the University of Göttingen, Germany. 
+                        I work with data and econometric methods to understand development, agriculture, environment, and policy-relevant questions.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="about.html" class="btn btn-primary">View Profile</a>
+                        <a href="projects.html" class="btn btn-secondary">Explore Projects</a>
+                    </div>
+                    <div class="hero-links">
+                        <a href="https://scholar.google.com/citations?user=aMB1WasAAAAJ&amp;hl=en" target="_blank" rel="noopener" class="text-link">Google Scholar</a>
+                        <span>·</span>
+                        <a href="https://github.com/AyodeleID" target="_blank" rel="noopener" class="text-link">GitHub</a>
+                        <span>·</span>
+                        <a href="https://www.linkedin.com/in/ayodele-idowu-/" target="_blank" rel="noopener" class="text-link">LinkedIn</a>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>Data Scientist<br><small>TNI Network Inc.</small></h3>
-                    <p>Jan&nbsp;2023&nbsp;–&nbsp;Dec&nbsp;2024 · Remote</p>
-                    <p>Improved operational efficiency by 15 % and boosted revenue by 10 % through analytics and A/B testing; built predictive models and dashboards that increased campaign ROI accuracy from 67 % to 82 % and reduced donor attrition by 40 %.</p>
-                </div>
-                <div class="card">
-                    <h3>Research Data Analyst<br><small>Novartis</small></h3>
-                    <p>Mar&nbsp;2020&nbsp;–&nbsp;Dec&nbsp;2022 · Lagos, Nigeria</p>
-                    <p>Presented complex findings to stakeholders, spearheaded multi‑country research that increased revenue by over 20 %, and developed KPIs and predictive models to reduce medication non‑adherence by 30 %.</p>
+
+                <div class="hero-photo-wrapper">
+                    <img src="profile.jpg" alt="Portrait of Ayodele Idowu" class="hero-profile" />
                 </div>
             </div>
         </section>
+
+        <!-- Highlights Section -->
         <section class="section">
-            <h2>Contact</h2>
-            <p>If you’d like to get in touch, feel free to reach out via email: <a href="mailto:ayodele@example.com">ayodele@example.com</a>.</p>
-            <p>You can also connect with me on
-                <a href="https://github.com/AyodeleID" target="_blank" rel="noopener">GitHub</a>,
-                <a href="https://scholar.google.com/citations?user=aMB1WasAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
-                and <a href="https://www.linkedin.com/in/ayodele-idowu-/" target="_blank" rel="noopener">LinkedIn</a>.
-            </p>
+            <div class="container">
+                <h2 class="section-title">What I work on</h2>
+                <div class="cards-grid">
+                    <article class="card">
+                        <h3>Applied Econometrics</h3>
+                        <p>
+                            Experience with microeconometric and quasi-experimental methods using R, Stata and Python for policy-relevant analysis.
+                        </p>
+                    </article>
+                    <article class="card">
+                        <h3>Development &amp; Agriculture</h3>
+                        <p>
+                            Focus on poverty, rural development, agricultural trade, and environmental policy in low- and middle-income countries.
+                        </p>
+                    </article>
+                    <article class="card">
+                        <h3>Data Science &amp; Tools</h3>
+                        <p>
+                            Skilled in data wrangling, visualization, reproducible workflows, and dashboards with GitHub, R Markdown, and Python.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Projects Teaser -->
+        <section class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Selected projects</h2>
+                <p class="section-intro">
+                    A few examples of ongoing and past work. See the Projects page for more details.
+                </p>
+                <div class="cards-grid">
+                    <article class="card">
+                        <h3>Environmental Regulations &amp; Agricultural Trade</h3>
+                        <p>
+                            Panel-data term paper investigating whether stricter environmental policies in the EU lead to carbon leakage via agri-food imports.
+                        </p>
+                    </article>
+                    <article class="card">
+                        <h3>Real-Time Migration Pressure Index (RMPI)</h3>
+                        <p>
+                            A machine-learning project combining climate, conflict, and food-security data to predict migration and displacement risks globally.
+                        </p>
+                    </article>
+                    <article class="card">
+                        <h3>Digital Health &amp; the Digital Divide</h3>
+                        <p>
+                            Research assistant work on TB-focused digital health projects, studying barriers to technology adoption and health worker facilitation.
+                        </p>
+                    </article>
+                </div>
+                <div class="section-cta">
+                    <a href="projects.html" class="btn btn-secondary">View all projects</a>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2026 Ayodele Idowu. All rights reserved.</p>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> Ayodele Idowu. All rights reserved.</p>
+            <p class="footer-links">
+                <a href="mailto:ayodele.idowuu@gmail.com" class="text-link">ayodele.idowuu@gmail.com</a>
+            </p>
+        </div>
     </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
