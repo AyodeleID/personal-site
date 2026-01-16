@@ -1,104 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayodele Idowu | About</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Ayodele Idowu</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Ayodele&nbsp;Idowu</div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
-        </nav>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-mark">AI</span>
+                <span class="logo-text">Ayodele Idowu</span>
+            </div>
+            <nav class="site-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+            </nav>
+        </div>
     </header>
-    <main class="container">
+
+    <main>
         <section class="section">
-            <h2>About Me</h2>
-            <!-- Profile photo -->
-            <img src="assets/profile.jpg" alt="Ayodele Idowu" class="profile-img">
-            <p>I am Ayodele&nbsp;Idowu, an economist and data scientist combining academic research with industry experience. Currently, I’m pursuing an MSc in Development Economics at the University of Göttingen, Germany. I hold a BSc&nbsp;(Hons) in Economics from the Federal University of Agriculture, Abeokuta, Nigeria. My work spans development, environmental and agricultural economics, econometrics and machine learning.</p>
-        </section>
-        <section class="section">
-            <h2>Research Interests</h2>
-            <ul class="list">
-                <li>Development &amp; Environmental Economics</li>
-                <li>Agricultural Economics</li>
-                <li>Econometrics &amp; Applied Econometrics</li>
-                <li>Data Science &amp; Machine Learning</li>
-            </ul>
-        </section>
-        <section class="section">
-            <h2>Education</h2>
-            <table>
-                <thead>
-                    <tr><th>Degree</th><th>Institution</th><th>Location</th><th>Dates</th><th>Notes</th></tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>MSc Development Economics</td>
-                        <td>University of Göttingen</td>
-                        <td>Göttingen, Germany</td>
-                        <td>Oct&nbsp;2024 – Aug&nbsp;2026</td>
-                        <td>Fully funded by a DAAD scholarship</td>
-                    </tr>
-                    <tr>
-                        <td>BSc (Hons) Economics</td>
-                        <td>Federal University of Agriculture, Abeokuta</td>
-                        <td>Ogun State, Nigeria</td>
-                        <td>Jan&nbsp;2016 – Feb&nbsp;2020</td>
-                        <td>Second Class Upper Division</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-        <section class="section">
-            <h2>Skills</h2>
-            <p><strong>Technical:</strong></p>
-            <ul class="skills-list">
-                <li>Advanced: Python, R, STATA, R Markdown, DAX, Excel, Power&nbsp;BI, Looker Studio, Research &amp; Big Data Analytics, Geospatial Data Analysis, Microsoft Office, Teams, Slack</li>
-                <li>Intermediate: SQL/BigQuery, Data Engineering, Google Earth Engine, Tableau, Project Management</li>
-            </ul>
-            <p><strong>Soft Skills:</strong> Communication, Time Management, Teamwork, Problem Solving, Critical Thinking</p>
-        </section>
-        <section class="section">
-            <h2>Volunteering &amp; Leadership</h2>
-            <ul class="list">
-                <li>Optimal Livelihood Foundation – Member &amp; Development Research Analyst (2023–2024)</li>
-                <li>Rotary Club of Lagos Youth Interact Club – Member &amp; President (2009–2011)</li>
-            </ul>
-        </section>
-        <section class="section">
-            <h2>Certifications &amp; Training</h2>
-            <ul class="list">
-                <li>DAAD LEAD! Summer School for LfA Scholars (2025)</li>
-                <li>IBM Professional Certifications: R for Data Science, Machine Learning with Python, SQL &amp; Relational Databases (Jan 2025)</li>
-                <li>Microsoft Certification: Boolean Logic in Python (Aug 2024)</li>
-                <li>LinkedIn Learning: Python for Data Visualization (Jul 2022)</li>
-            </ul>
-        </section>
-        <section class="section">
-            <h2>Languages</h2>
-            <ul class="list">
-                <li>English (native)</li>
-                <li>Deutsch (B1)</li>
-            </ul>
-        </section>
-        <section class="section">
-            <h2>Awards</h2>
-            <ul class="list">
-                <li>TNI Network Inc. Rookie of the Year (Dec 2023)</li>
-                <li>President, Rotary Club Youth Interact Club – Mushin Division (Apr 2009 – May 2011)</li>
-            </ul>
+            <div class="container about-layout">
+                <div>
+                    <h1 class="section-title">About me</h1>
+                    <p class="about-paragraph">
+                        I am a Development Economist and data scientist-in-training, currently completing my MSc in Development Economics at the University of Göttingen, Germany. 
+                        My work sits at the intersection of applied econometrics, development policy, agriculture, and environmental sustainability.
+                    </p>
+                    <p class="about-paragraph">
+                        I enjoy working end-to-end with data: from designing empirical strategies and cleaning complex datasets, 
+                        to implementing models in R, Python and Stata, and communicating results to academic, policy, and practitioner audiences.
+                    </p>
+                    <p class="about-paragraph">
+                        In addition to my studies, I have experience as a student research assistant on digital health and rural development projects, 
+                        including work on the digital divide, health worker adoption of TB screening tools, and geospatial analyses for development.
+                    </p>
+
+                    <h2 class="about-section-title">Research and professional interests</h2>
+                    <ul class="about-list">
+                        <li>Development economics, poverty, and rural livelihoods</li>
+                        <li>Agricultural and environmental economics, including carbon leakage and sustainable food systems</li>
+                        <li>Data-driven policy evaluation and quasi-experimental methods</li>
+                        <li>Digital technologies, the digital divide, and health systems in low- and middle-income countries</li>
+                    </ul>
+                </div>
+
+                <aside>
+                    <h2 class="about-section-title">Education</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-role">MSc Development Economics</div>
+                            <div class="timeline-org">University of Göttingen, Germany</div>
+                            <div class="timeline-meta">Ongoing</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-role">B.Sc. Agricultural Economics</div>
+                            <div class="timeline-org">Federal University of Agriculture, Abeokuta (FUNAAB), Nigeria</div>
+                            <div class="timeline-meta">Completed</div>
+                        </div>
+                    </div>
+
+                    <h2 class="about-section-title" style="margin-top: 1.75rem;">Selected experience</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-role">Student Research Assistant</div>
+                            <div class="timeline-org">Chair of Information Management, University of Göttingen</div>
+                            <div class="timeline-meta">Digital health, TB screening, digital divide</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-role">Student Research Assistant</div>
+                            <div class="timeline-org">Projects in environmental and agricultural economics</div>
+                            <div class="timeline-meta">Empirical work with panel data, geospatial data, and econometric models</div>
+                        </div>
+                    </div>
+
+                    <h2 class="about-section-title" style="margin-top: 1.75rem;">Links</h2>
+                    <p class="about-paragraph">
+                        <a href="https://scholar.google.com/citations?user=aMB1WasAAAAJ&amp;hl=en" target="_blank" rel="noopener" class="text-link">Google Scholar</a><br />
+                        <a href="https://github.com/AyodeleID" target="_blank" rel="noopener" class="text-link">GitHub</a><br />
+                        <a href="https://www.linkedin.com/in/ayodele-idowu-/" target="_blank" rel="noopener" class="text-link">LinkedIn</a><br />
+                        <a href="mailto:ayodele.idowuu@gmail.com" class="text-link">Email</a>
+                    </p>
+                </aside>
+            </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2026 Ayodele Idowu. All rights reserved.</p>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> Ayodele Idowu. All rights reserved.</p>
+            <p class="footer-links">
+                <a href="mailto:ayodele.idowuu@gmail.com" class="text-link">ayodele.idowuu@gmail.com</a>
+            </p>
+        </div>
     </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
