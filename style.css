@@ -397,3 +397,37 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+/* ==== LINK STYLING (GLOBAL) ==== */
+
+a,
+.text-link {
+    color: #1e6bb8;               /* strong academic blue */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover,
+.text-link:hover {
+    color: #004a99;               /* darker on hover */
+    text-decoration: underline;
+}
+
+/* Email button */
+
+.btn-email {
+    display: inline-block;
+    padding: 0.55rem 1rem;
+    border-radius: 999px;
+    border: 1px solid #1e6bb8;
+    color: #1e6bb8;
+    font-weight: 500;
+    font-size: 0.95rem;
+    text-decoration: none;
+    background: transparent;
+}
+
+.btn-email:hover {
+    background: #1e6bb8;
+    color: #ffffff;
+}
