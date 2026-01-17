@@ -1,61 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayodele Idowu | Projects</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Ayodele Idowu</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Ayodele&nbsp;Idowu</div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
-        </nav>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-mark">AI</span>
+                <span class="logo-text">Ayodele Idowu</span>
+            </div>
+            <nav class="site-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link active">Projects</a>
+                <a href="research.html" class="nav-link">Research</a>
+            </nav>
+        </div>
     </header>
-    <main class="container">
+
+    <main>
         <section class="section">
-            <h2>Projects</h2>
-            <div class="card-grid">
-                <div class="card">
-                    <h3>Global Real‑Time Migration Pressure Index Web App</h3>
-                    <p><strong>Date:</strong> Oct 2025</p>
-                    <p>Developed a machine‑learning based web application that forecasts migration pressure using socio‑economic and climatic data from multiple countries.</p>
-                </div>
-                <div class="card">
-                    <h3>EPL 2025/26 Season Outcome Predictor</h3>
-                    <p><strong>Date:</strong> Aug 2025</p>
-                    <p>Built predictive models in Python to forecast outcomes for the English Premier League season, using historical performance and player statistics.</p>
-                </div>
-                <div class="card">
-                    <h3>Rumour Detection System</h3>
-                    <p><strong>Date:</strong> Jan 2025</p>
-                    <p>Implemented a text‑classification system to detect misinformation and rumours on social‑media posts using natural language processing techniques.</p>
-                </div>
-                <div class="card">
-                    <h3>Donor Acquisition Strategy Analytics</h3>
-                    <p><strong>Date:</strong> Jun 2024</p>
-                    <p>Designed analytics and dashboards with Python, R, SQL and Power BI to optimise donor acquisition strategies for a non‑profit organisation.</p>
-                </div>
-                <div class="card">
-                    <h3>Global COVID‑19 Spread Analysis</h3>
-                    <p><strong>Date:</strong> Feb 2021</p>
-                    <p>Performed time‑series modelling of global COVID‑19 cases to identify patterns and provide actionable insights to stakeholders.</p>
-                </div>
-                <div class="card">
-                    <h3>US Population &amp; Migration Dashboards</h3>
-                    <p><strong>Date:</strong> Apr 2022</p>
-                    <p>Created interactive Power BI dashboards to visualise and interpret US population and migration trends for policymakers.</p>
+            <div class="container">
+                <h1 class="section-title">Projects</h1>
+                <p class="section-intro">
+                    A sample of ongoing and past projects at the intersection of economics, data science and policy.
+                </p>
+
+                <div class="cards-grid">
+                    <article class="card">
+                        <h3>Environmental Regulations &amp; Agricultural Trade</h3>
+                        <p>
+                            Econometric analysis of whether stricter EU environmental policy stringency leads to carbon leakage 
+                            through changes in agri-food imports from major trading partners.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Real-Time Migration Pressure Index (RMPI)</h3>
+                        <p>
+                            Machine learning index combining climate, conflict and food security data to track and predict 
+                            migration and displacement pressure at subnational level.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Digital Health &amp; the Digital Divide</h3>
+                        <p>
+                            Research assistant work on TB-focused digital health projects, examining how digital divides, 
+                            trust and health worker facilitation shape technology adoption.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Economic Complexity &amp; Renewable Energy</h3>
+                        <p>
+                            Panel-data and time-series analysis of the link between economic complexity and renewable energy 
+                            consumption in South Asian economies.
+                        </p>
+                    </article>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2026 Ayodele Idowu. All rights reserved.</p>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> Ayodele Idowu. All rights reserved.</p>
+            <p class="footer-links">
+                <a href="mailto:ayodele.idowuu@gmail.com" class="btn-email">Email me</a>
+            </p>
+        </div>
     </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
