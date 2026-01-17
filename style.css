@@ -485,8 +485,14 @@ body {
     font-size: 0.9rem;
     font-weight: 500;
 }
+
 .project-desc {
     margin-top: 0.5rem;
     font-size: 0.95rem;
     line-height: 1.5;
+}
+
+/* ==== FIX: intro text on dark sections (Selected projects) ==== */
+.section-alt .section-intro {
+    color: #e5e7eb;  /* light text so it’s clearly visible on the dark background */
 }
