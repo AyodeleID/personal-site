@@ -431,3 +431,62 @@ a:hover,
     background: #1e6bb8;
     color: #ffffff;
 }
+
+/* ==== IMPROVE TEXT VISIBILITY ==== */
+
+/* Darker, high-contrast default text colour */
+body {
+    color: #1f2933; /* deep grey/near-black, very readable */
+}
+
+/* Main paragraph styles */
+.section-intro,
+.about-paragraph,
+.about-list li {
+    color: #1f2933;
+}
+
+/* Meta text (dates, locations) still slightly softer but readable */
+.timeline-meta,
+.project-meta {
+    color: #6b7280;
+}
+
+/* ==== PROJECTS PAGE LAYOUT ==== */
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    margin-top: 1.5rem;
+}
+
+.project-item {
+    padding: 1.25rem 1.5rem;
+    border-radius: 0.75rem;
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+}
+
+.project-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.project-title-row h3 {
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+.project-meta {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.project-desc {
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
