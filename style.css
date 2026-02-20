@@ -246,8 +246,8 @@ a { color: inherit; text-decoration: none; }
     display: inline-block;
     padding: 0.3rem 0.85rem;
     border-radius: 999px;
-    border: 1px solid rgba(148,163,184,0.3);
-    color: #1e293b;
+    border: 1px solid rgba(148,163,184,0.4);
+    color: #cbd5e1;
     font-size: 0.82rem;
     transition: border-color 0.18s, color 0.18s, background 0.18s;
 }
@@ -329,8 +329,8 @@ a { color: inherit; text-decoration: none; }
 
 .btn-outline {
     background: transparent;
-    border-color: rgba(148,163,184,0.45);
-    color: #1e293b;
+    border-color: rgba(148,163,184,0.55);
+    color: #cbd5e1;
 }
 .btn-outline:hover {
     border-color: var(--teal2);
