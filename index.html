@@ -5,133 +5,206 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ayodele Idowu | Economist &amp; Data Scientist</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Site Header -->
+
     <header class="site-header">
         <div class="container nav-container">
-            <div class="logo">
+            <a href="index.html" class="logo">
                 <span class="logo-mark">AI</span>
                 <span class="logo-text">Ayodele Idowu</span>
-            </div>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
             <nav class="site-nav">
-                <a href="index.html" class="nav-link active">Home</a>
-                <a href="about.html" class="nav-link">About</a>
+                <a href="index.html"    class="nav-link active">Home</a>
+                <a href="about.html"   class="nav-link">About</a>
                 <a href="projects.html" class="nav-link">Projects</a>
                 <a href="research.html" class="nav-link">Research</a>
+                <a href="news.html"    class="nav-link">News</a>
+                <a href="cv.html"      class="nav-link nav-cta">CV</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <!-- Hero Section -->
+
         <section class="hero">
+            <div class="hero-bg"></div>
             <div class="hero-overlay"></div>
             <div class="container hero-inner">
-                <div class="hero-text">
-                    <p class="hero-kicker">Economics · Data · Development</p>
-                    <h1>Ayodele Idowu</h1>
+                <div class="hero-text" data-animate>
+                    <p class="hero-kicker"><span class="kicker-dot"></span>Economics · Data · Development</p>
+                    <h1 class="hero-title">Ayodele<br><em>Idowu</em></h1>
                     <p class="hero-subtitle">Economist &amp; Data Scientist</p>
                     <p class="hero-body">
-                        I am an economist and data scientist currently in the final phase of my MSc in Development Economics at the University of Göttingen, Germany. 
-                        I work with data and econometric methods, using R, Python, SQL/BigQuery and Stata, to answer business, market, and economic policy-relevant questions in 
-                        business organization, development economics, agricultural and environmental economics.
+                        I am an economist and data scientist in the final phase of my MSc in Development Economics
+                        at the University of Göttingen, Germany (DAAD Scholar).<br />
+                        I apply econometric methods and data science tools, including R, Python, SQL/BigQuery,
+                        Power BI, and Stata, to answer policy-relevant and business-critical questions,<br />
+                        with research interests in development economics, agricultural economics,
+                        and environmental economics.
                     </p>
                     <div class="hero-cta">
-                        <a href="about.html" class="btn btn-primary">View Profile</a>
-                        <a href="projects.html" class="btn btn-secondary">Explore Projects</a>
+                        <a href="about.html"           class="btn btn-primary">View Profile</a>
+                        <a href="projects.html"        class="btn btn-outline">Explore Projects</a>
+                        <a href="ayodele-idowu-cv.pdf" download class="btn btn-ghost">Download CV ↓</a>
                     </div>
                     <div class="hero-links">
-                        <a href="research.html" class="text-link">Research</a>
-                        <span>·</span>
-                        <a href="https://scholar.google.com/citations?user=aMB1WasAAAAJ&amp;hl=en" target="_blank" rel="noopener" class="text-link">Google Scholar</a>
-                        <span>·</span>
-                        <a href="https://github.com/AyodeleID" target="_blank" rel="noopener" class="text-link">GitHub</a>
-                        <span>·</span>
-                        <a href="https://www.linkedin.com/in/ayodele-idowu-/" target="_blank" rel="noopener" class="text-link">LinkedIn</a>
+                        <a href="research.html" class="pill-link">Research</a>
+                        <a href="https://scholar.google.com/citations?user=aMB1WasAAAAJ&hl=en" target="_blank" rel="noopener" class="pill-link">Google Scholar ↗</a>
+                        <a href="https://github.com/AyodeleID" target="_blank" rel="noopener" class="pill-link">GitHub ↗</a>
+                        <a href="https://www.linkedin.com/in/ayodele-idowu-/" target="_blank" rel="noopener" class="pill-link">LinkedIn ↗</a>
                     </div>
                 </div>
-
-                <div class="hero-photo-wrapper">
+                <div class="hero-photo-wrapper" data-animate data-delay="200">
+                    <div class="photo-ring"></div>
                     <img src="profile.jpg" alt="Portrait of Ayodele Idowu" class="hero-profile" />
+                    <div class="photo-badge">Open to opportunities</div>
+                </div>
+            </div>
+            <div class="hero-scroll-hint">scroll ↓</div>
+        </section>
+
+        <section class="skills-strip">
+            <div class="container">
+                <div class="skills-row">
+                    <span class="skill-tag">R</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">SQL / BigQuery</span>
+                    <span class="skill-tag">Stata</span>
+                    <span class="skill-tag">Power BI</span>
+                    <span class="skill-tag">Causal Inference</span>
+                    <span class="skill-tag">Machine Learning</span>
+                    <span class="skill-tag">Panel Data</span>
+                    <span class="skill-tag">NLP</span>
+                    <span class="skill-tag">Geospatial Analysis</span>
+                    <span class="skill-tag">MAXQDA</span>
+                    <span class="skill-tag">Google Earth Engine</span>
                 </div>
             </div>
         </section>
 
-        <!-- Highlights Section -->
         <section class="section">
             <div class="container">
-                <h2 class="section-title">What I work on</h2>
-                <div class="cards-grid">
-                    <article class="card">
+                <div class="section-header">
+                    <p class="section-label">Expertise</p>
+                    <h2 class="section-title">What I work on</h2>
+                </div>
+                <div class="cards-grid three-col">
+                    <article class="card card-accent">
+                        <div class="card-icon">📐</div>
                         <h3>Applied Econometrics</h3>
-                        <p>
-                            Strong experience with microeconometrics, causal inference and quasi-experimental methods in R, Stata and Python.
-                        </p>
+                        <p>Microeconometrics, causal inference, quasi-experimental designs and panel data methods in R, Stata and Python.</p>
                     </article>
                     <article class="card">
+                        <div class="card-icon">🌍</div>
                         <h3>Development, Agriculture &amp; Environment</h3>
-                        <p>
-                            Focus on development economics, agricultural economics and environmental economics, with applications to trade and policy.
-                        </p>
+                        <p>Development economics, agricultural trade, food security, carbon policy and environmental economics.</p>
                     </article>
                     <article class="card">
+                        <div class="card-icon">🤖</div>
                         <h3>Data Science &amp; Machine Learning</h3>
-                        <p>
-                            Building reproducible data pipelines, models and dashboards using Python, R, SQL/BigQuery and modern analytics tools.
-                        </p>
+                        <p>Reproducible pipelines, predictive models, NLP, dashboards and geospatial analytics at scale.</p>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- Recent Projects Teaser -->
-        <section class="section section-alt">
+        <section class="section section-dark">
             <div class="container">
-                <h2 class="section-title">Selected projects</h2>
-                <p class="section-intro">
-                    A few examples of ongoing and past work. See the Projects page for more details.
-                </p>
-                <div class="cards-grid">
-                    <article class="card">
+                <div class="section-header">
+                    <p class="section-label">Portfolio</p>
+                    <h2 class="section-title">Selected projects</h2>
+                    <p class="section-intro">A few examples of ongoing and past work.</p>
+                </div>
+                <div class="cards-grid three-col">
+                    <article class="card card-dark">
+                        <span class="card-tag">Economics + ML</span>
                         <h3>Environmental Regulations &amp; Agricultural Trade</h3>
-                        <p>
-                            Panel-data analysis of whether stricter EU environmental policies lead to carbon leakage through agri-food imports.
-                        </p>
+                        <p>Panel-data analysis of whether stricter EU environmental policies lead to carbon leakage via agri-food imports.</p>
                     </article>
-                    <article class="card">
-                        <h3>Real-Time Migration Pressure Index (RMPI)</h3>
-                        <p>
-                            Global machine-learning project combining climate, conflict and food-security data to predict migration pressure.
-                        </p>
+                    <article class="card card-dark card-featured">
+                        <span class="card-tag">Machine Learning</span>
+                        <h3>Real-Time Migration Pressure Index</h3>
+                        <p>Global ML index combining climate, conflict and food-security data to predict migration pressure at subnational level.</p>
                     </article>
-                    <article class="card">
+                    <article class="card card-dark">
+                        <span class="card-tag">Digital Health</span>
                         <h3>Digital Health &amp; the Digital Divide</h3>
-                        <p>
-                            Research assistant work on TB-focused digital health projects, studying technology barriers and health worker facilitation.
-                        </p>
+                        <p>RA work on TB-focused digital health projects studying technology barriers and health worker facilitation.</p>
                     </article>
                 </div>
                 <div class="section-cta">
-                    <a href="projects.html" class="btn btn-secondary">View all projects</a>
+                    <a href="projects.html" class="btn btn-outline-light">View all projects →</a>
                 </div>
             </div>
         </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-label">Updates</p>
+                    <h2 class="section-title">Latest news</h2>
+                </div>
+                <div class="news-feed">
+                    <a href="news.html" class="news-item">
+                        <span class="news-date">2025</span>
+                        <span class="news-dot"></span>
+                        <span class="news-text">Paper accepted: <em>Are Carbon Leakages Traceable to EU Environmental Policy Stringency?</em> — International Economics and Economic Policy (forthcoming).</span>
+                        <span class="news-arrow">→</span>
+                    </a>
+                    <a href="news.html" class="news-item">
+                        <span class="news-date">2025</span>
+                        <span class="news-dot"></span>
+                        <span class="news-text">New working paper: <em>Economic Complexity and Renewable Energy Consumption in South Asia</em> — under review at Asia and the Global Economy.</span>
+                        <span class="news-arrow">→</span>
+                    </a>
+                    <a href="news.html" class="news-item">
+                        <span class="news-date">Sep 2025</span>
+                        <span class="news-dot"></span>
+                        <span class="news-text">Attended DAAD LEAD! Summer School for Leadership for Africa Scholars.</span>
+                        <span class="news-arrow">→</span>
+                    </a>
+                    <a href="news.html" class="news-item">
+                        <span class="news-date">Apr 2025</span>
+                        <span class="news-dot"></span>
+                        <span class="news-text">Started as Research Assistant at University of Göttingen — Agricultural Economics &amp; Information Management.</span>
+                        <span class="news-arrow">→</span>
+                    </a>
+                </div>
+                <div class="section-cta">
+                    <a href="news.html" class="btn btn-outline">All news →</a>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <!-- Footer -->
     <footer class="site-footer">
         <div class="container footer-inner">
-            <p>© <span id="year"></span> Ayodele Idowu. All rights reserved.</p>
-            <p class="footer-links">
+            <div class="footer-brand">
+                <span class="logo-mark">AI</span>
+                <span>Ayodele Idowu</span>
+            </div>
+            <div class="footer-links-group">
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="research.html">Research</a>
+                <a href="news.html">News</a>
+                <a href="cv.html">CV</a>
+            </div>
+            <div class="footer-right">
+                <p>© <span class="year"></span> Ayodele Idowu. All rights reserved.</p>
                 <a href="mailto:ayodele.idowuu@gmail.com" class="btn-email">Email me</a>
-            </p>
+            </div>
         </div>
     </footer>
 
-    <script>
-        // Set current year in footer
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>
