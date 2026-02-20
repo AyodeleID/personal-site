@@ -5,120 +5,174 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects | Ayodele Idowu</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
+
     <header class="site-header">
         <div class="container nav-container">
-            <div class="logo">
+            <a href="index.html" class="logo">
                 <span class="logo-mark">AI</span>
                 <span class="logo-text">Ayodele Idowu</span>
-            </div>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
             <nav class="site-nav">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="about.html" class="nav-link">About</a>
+                <a href="index.html"    class="nav-link">Home</a>
+                <a href="about.html"   class="nav-link">About</a>
                 <a href="projects.html" class="nav-link active">Projects</a>
                 <a href="research.html" class="nav-link">Research</a>
+                <a href="news.html"    class="nav-link">News</a>
+                <a href="cv.html"      class="nav-link nav-cta">CV</a>
             </nav>
         </div>
     </header>
 
     <main>
+
+        <section class="page-hero">
+            <div class="container">
+                <p class="section-label">Portfolio</p>
+                <h1 class="page-title">Project<br><em>Warehouse</em></h1>
+                <p class="page-intro">Data science and econometrics projects combining economics, statistics and modern analytics to solve real-world problems.</p>
+            </div>
+        </section>
+
+        <div class="filter-bar">
+            <div class="container">
+                <div class="filter-btns">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                    <button class="filter-btn" data-filter="economics">Economics</button>
+                    <button class="filter-btn" data-filter="health">Health</button>
+                    <button class="filter-btn" data-filter="bi">BI &amp; Analytics</button>
+                </div>
+            </div>
+        </div>
+
         <section class="section">
             <div class="container">
-                <h1 class="section-title">Selected Data Science Projects</h1>
-                <p class="section-intro">
-                    A selection of data science and machine learning projects where I combine economics, statistics and
-                    modern analytics tools to solve real-world problems in migration, health, business intelligence
-                    and policy.
-                </p>
+                <div class="projects-grid">
 
-                <div class="projects-list">
-                    <article class="project-item">
-                        <div class="project-title-row">
-                            <h3>Global Real-Time Migration Pressure Index (RMPI) Web App</h3>
-                            <span class="project-meta">Oct 2025</span>
+                    <article class="project-card" data-category="ml economics">
+                        <div class="project-card-header">
+                            <div class="project-tags">
+                                <span class="ptag">Machine Learning</span>
+                                <span class="ptag">Migration</span>
+                            </div>
+                            <span class="project-date">Oct 2025</span>
                         </div>
-                        <p class="project-desc">
-                            Built a global machine learning index and interactive web app that predicts migration and
-                            displacement pressure using climate, conflict and food security data at subnational level,
-                            deployed with Python and web technologies.
-                        </p>
+                        <h3>Global Real-Time Migration Pressure Index (RMPI) Web App</h3>
+                        <p>Built a global ML index and interactive web app predicting migration and displacement pressure using climate, conflict and food security data at subnational level, deployed with Python and web technologies.</p>
+                        <div class="project-stack">
+                            <span>Python</span><span>Machine Learning</span><span>Web App</span><span>Geospatial</span><span>Climate Data</span>
+                        </div>
                     </article>
 
-                    <article class="project-item">
-                        <div class="project-title-row">
-                            <h3>EPL 2025/26 Season Outcome Prediction</h3>
-                            <span class="project-meta">Aug 2025</span>
+                    <article class="project-card" data-category="ml">
+                        <div class="project-card-header">
+                            <div class="project-tags">
+                                <span class="ptag">Machine Learning</span>
+                                <span class="ptag">Sports Analytics</span>
+                            </div>
+                            <span class="project-date">Aug 2025</span>
                         </div>
-                        <p class="project-desc">
-                            Developed Python-based models to predict English Premier League match and season outcomes
-                            using historical performance, xG statistics and team features, comparing classification and
-                            regression approaches.
-                        </p>
+                        <h3>EPL 2025/26 Season Outcome Prediction</h3>
+                        <p>Developed Python-based models to predict English Premier League match and season outcomes using historical performance, xG statistics and team features, comparing classification and regression approaches.</p>
+                        <div class="project-stack">
+                            <span>Python</span><span>Classification</span><span>Regression</span><span>Feature Engineering</span><span>xG Stats</span>
+                        </div>
                     </article>
 
-                    <article class="project-item">
-                        <div class="project-title-row">
-                            <h3>Rumour Detection System with Text Classification</h3>
-                            <span class="project-meta">Jan 2025</span>
+                    <article class="project-card" data-category="ml">
+                        <div class="project-card-header">
+                            <div class="project-tags">
+                                <span class="ptag">NLP</span>
+                                <span class="ptag">Machine Learning</span>
+                            </div>
+                            <span class="project-date">Jan 2025</span>
                         </div>
-                        <p class="project-desc">
-                            Designed an NLP pipeline in Python to detect online rumours using text preprocessing,
-                            feature engineering and machine learning classifiers, improving detection accuracy on
-                            labelled social media datasets.
-                        </p>
+                        <h3>Rumour Detection System with Text Classification</h3>
+                        <p>Designed an NLP pipeline in Python to detect online rumours using text preprocessing, feature engineering and ML classifiers, improving detection accuracy on labelled social media datasets.</p>
+                        <div class="project-stack">
+                            <span>Python</span><span>NLP</span><span>Text Classification</span><span>sklearn</span><span>Feature Engineering</span>
+                        </div>
                     </article>
 
-                    <article class="project-item">
-                        <div class="project-title-row">
-                            <h3>Donor Acquisition &amp; Retention Analytics for TNI Inc.</h3>
-                            <span class="project-meta">Jun 2024</span>
+                    <article class="project-card" data-category="bi ml economics">
+                        <div class="project-card-header">
+                            <div class="project-tags">
+                                <span class="ptag">BI &amp; Analytics</span>
+                                <span class="ptag">Non-profit</span>
+                            </div>
+                            <span class="project-date">Jun 2024</span>
                         </div>
-                        <p class="project-desc">
-                            Led data science work using Python, R, SQL and Power BI to analyse acquisition funnels,
-                            segment donors and build churn-prediction models, supporting strategy decisions for
-                            fundraising campaigns across multiple NGOs.
-                        </p>
+                        <h3>Donor Acquisition &amp; Retention Analytics for TNI Inc.</h3>
+                        <p>Led data science work using Python, R, SQL and Power BI to analyse acquisition funnels, segment donors and build churn-prediction models. Reduced churn by 40% across OXFAM, UNICEF and the Red Cross.</p>
+                        <div class="project-stack">
+                            <span>Python</span><span>R</span><span>SQL</span><span>Power BI</span><span>Churn Modelling</span><span>NLP</span>
+                        </div>
                     </article>
 
-                    <article class="project-item">
-                        <div class="project-title-row">
-                            <h3>Global COVID-19 Spread &amp; Time-Series Modelling</h3>
-                            <span class="project-meta">Feb 2021</span>
+                    <article class="project-card" data-category="bi">
+                        <div class="project-card-header">
+                            <div class="project-tags">
+                                <span class="ptag">BI &amp; Analytics</span>
+                                <span class="ptag">Demographics</span>
+                            </div>
+                            <span class="project-date">Apr 2022</span>
                         </div>
-                        <p class="project-desc">
-                            Analysed global COVID-19 case trends and mobility indicators using Python, building
-                            time-series forecasting models to study transmission dynamics and short-term projections.
-                        </p>
+                        <h3>US Population and Migration Dashboards</h3>
+                        <p>Built interactive Power BI dashboards exploring US population, internal migration and demographic trends, enabling stakeholders to explore regional patterns and changes over time.</p>
+                        <div class="project-stack">
+                            <span>Power BI</span><span>Data Visualisation</span><span>Demographics</span><span>Migration</span>
+                        </div>
                     </article>
 
-                    <article class="project-item">
-                        <div class="project-title-row">
-                            <h3>US Population and Migration Dashboards</h3>
-                            <span class="project-meta">Apr 2022</span>
+                    <article class="project-card" data-category="ml health">
+                        <div class="project-card-header">
+                            <div class="project-tags">
+                                <span class="ptag">Time Series</span>
+                                <span class="ptag">Health</span>
+                            </div>
+                            <span class="project-date">Feb 2021</span>
                         </div>
-                        <p class="project-desc">
-                            Built interactive Power BI dashboards exploring US population, internal migration and
-                            demographic trends, enabling stakeholders to explore regional patterns and changes over time.
-                        </p>
+                        <h3>Global COVID-19 Spread &amp; Time-Series Modelling</h3>
+                        <p>Analysed global COVID-19 case trends and mobility indicators using Python, building time-series forecasting models to study transmission dynamics and short-term projections.</p>
+                        <div class="project-stack">
+                            <span>Python</span><span>Time Series</span><span>Forecasting</span><span>Mobility Data</span>
+                        </div>
                     </article>
+
                 </div>
             </div>
         </section>
+
     </main>
 
     <footer class="site-footer">
         <div class="container footer-inner">
-            <p>© <span id="year"></span> Ayodele Idowu. All rights reserved.</p>
-            <p class="footer-links">
+            <div class="footer-brand">
+                <span class="logo-mark">AI</span>
+                <span>Ayodele Idowu</span>
+            </div>
+            <div class="footer-links-group">
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="research.html">Research</a>
+                <a href="news.html">News</a>
+                <a href="cv.html">CV</a>
+            </div>
+            <div class="footer-right">
+                <p>© <span class="year"></span> Ayodele Idowu. All rights reserved.</p>
                 <a href="mailto:ayodele.idowuu@gmail.com" class="btn-email">Email me</a>
-            </p>
+            </div>
         </div>
     </footer>
 
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>
