@@ -2,7 +2,7 @@
 
 # 🌐 Personal Portfolio & Academic Website
 
-### Ayodele Isaiah Idowu — Applied Economics, Data & ML
+### Ayodele Idowu — Applied Economics, Data & ML
 
 [![HTML](https://img.shields.io/badge/HTML-64.2%25-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/docs/Web/HTML)
 [![CSS](https://img.shields.io/badge/CSS-33.1%25-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/docs/Web/CSS)
