@@ -4,38 +4,57 @@
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
 ## Features
-| Feature        | Description                  |
-|----------------|------------------------------|
-| Responsive Design | The site is mobile-friendly. |
-| Fast Loading    | Optimized for quick loads.   |
-| Easy Navigation | User-friendly interface.      |
+- Responsive Design
+- Interactive UI
+- SEO Optimized
 
 ## Site Structure
 ```
-├── index.html
-├── about.html
-├── projects.html
-└── contact.html
+personal-site/
+├── public/
+│   ├── index.html
+│   ├── favicon.ico
+│   └── assets/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   └── App.js
+└── README.md
 ```
 
 ## Tech Stack
-- HTML5
-- CSS3
-- JavaScript
-- Bootstrap
+- **Frontend:** React, Tailwind CSS
+- **Backend:** Node.js, Express
+- **Database:** MongoDB
 
-## Deployment
-1. Clone the repository.
-2. Run `npm install` to set up dependencies.
-3. Use `npm start` to launch the site locally.
+## Deployment Info
+This project is deployed using Vercel. You can access the live site at [yourwebsite.com](https://yourwebsite.com).
 
 ## Local Development Setup
-- Ensure you have Node.js installed.
-- Clone the repo and navigate into its directory.
+To run this project locally, follow these steps:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/AyodeleID/personal-site.git
+   cd personal-site
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm start
+   ```
+
+## Content Management Guidelines
+- Ensure all content is up to date and aligns with the project's branding.
+- Use Markdown for content formatting.
+
+## Contributing
+Contributions are welcome! Please read our [contributing guidelines](CONTRIBUTING.md) for more information.
 
 ## Author
-- **Ayodele ID** - [AyodeleID](https://github.com/AyodeleID)
+**Ayodele ID**
+[GitHub](https://github.com/AyodeleID) | [LinkedIn](https://www.linkedin.com/in/ayodeleid/) 
 
----
-
-*Last updated: 2026-04-01 10:01:00 UTC*
+_Last updated: 2026-04-01 10:02:37 UTC_
