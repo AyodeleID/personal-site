@@ -179,7 +179,7 @@ a { color: inherit; text-decoration: none; }
     position: relative;
     z-index: 2;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     gap: 4rem;
     padding: 5rem 0 4.5rem;
@@ -261,6 +261,7 @@ a { color: inherit; text-decoration: none; }
 .hero-photo-wrapper {
     position: relative;
     flex-shrink: 0;
+    margin-top: 3.5rem;
 }
 
 .photo-ring {
@@ -1223,9 +1224,10 @@ a { color: inherit; text-decoration: none; }
     .site-header { position: relative; }
 
     .hero            { min-height: auto; }
-    .hero-inner      { padding: 3.5rem 0 3rem; flex-direction: column-reverse; gap: 2rem; }
+    .hero-inner      { padding: 3.5rem 0 3rem; flex-direction: column-reverse; gap: 2rem; align-items: center; }
     .hero-title      { font-size: 2.8rem; }
     .hero-profile    { width: 150px; height: 150px; }
+    .hero-photo-wrapper { margin-top: 0; }
 
     .page-title      { font-size: 2.4rem; }
     .three-col       { grid-template-columns: 1fr; }
